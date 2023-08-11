@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Teko:wght@300&family=Ubuntu:wght@500&family=Work+Sans:wght@400;500&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.car-info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-2, .text-1{
+	text-align: center;
+
+}
+.card{
+	border:none;
+	text-align: center;
+}
+.btn{
+	border:1px solid black;
+}
+
+.card-me{
+	text-align: left;
+}
+.section-footer h3{
+	color: var(--white);
+	margin-bottom: 4rem;
+}
+
+.f-contact ul, .f-links ul , .f-bmw ul , .f-legal ul{
+	display: flex;
+	flex-direction: column;
+	gap:1.8rem;
+	justify-content: center;
+
+}
+.f-contact ul li a , .f-links ul li a , .f-bmw ul li a, .f-legal ul li a , .f-contact ul, .f-links ul , .f-bmw ul , .f-legal ul{
+	text-decoration: none;
+	list-style: none;
+	color: black;
+}
+.grid-four-column{
+	grid-template-columns: repeat(4 , 1fr);  /*grid-template-columns: 1fr 1fr*/
+
+}
+.container{
+	max-width: 140rem;
+	margin: 0 auto;
+}
+.grid{
+	display: grid;
+	gap:9rem;
+}
+
+ .f-heading  a{
+ 	font-family: 'Poppins', sans-serif;
+font-family: 'Teko', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Work Sans', sans-serif;
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: black;
+
+}
+.card-title{
+	font-family: 'Poppins', sans-serif;
+font-family: 'Teko', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+
+
+@media(max-width: 780px){
+	.car-info{
+		flex-direction: column;
+	}
+}
+
+/*Below 560px*/
+@media(max-width: 35rem){
+
+	/*footer section*/
+	.section-footer .f-legal,
+	.section-footer .f-bmw,.section-footer .f-links,.section-footer .f-contact,{
+		grid-column: 1/-1;
+	}
+}
